@@ -1,3 +1,8 @@
 <resources>
-  <string name="app_name">Ecorecicla-app</string>
+    <string name="app_name">Ecorecicla-app</string>
+    <string name="estadistica">Estadisticas</string>
+    <string name="el_planeta">¡El planeta te agradece tu aporte!</string>
+    <string name="ganancias_estadisticas">Total de ganancias</string>
+    <string name="total_ganancias_estadisticas_tres">20.000 cop</string>
+    <string name="menu_estadisticas_tres">Llevas reciclando</string>
 </resources>
