@@ -8,5 +8,9 @@
     <string name="historial">Historial</string>
     <string name="porcentajes">Porcentajes</string>
     <string name="ganancias">Ganancias</string>
-
+    <string name="descripcion_img_ganancias">Ganancias</string>
+    <string name="descripcion_img_estadisticas">Estadisticas</string>
+    <string name="descripcion_img_total_ganancias">Total ganancias</string>
+    <string name="descripcion_img_porcentajes">Porcentajes</string>
+    <string name="descripcion_img_historial">Historial</string>
 </resources>
