@@ -13,4 +13,11 @@
     <string name="descripcion_img_total_ganancias">Total ganancias</string>
     <string name="descripcion_img_porcentajes">Porcentajes</string>
     <string name="descripcion_img_historial">Historial</string>
+    <string name="descripcion_img_olvido_contrasena">olvido contrasena</string>
+    <string name="enunciado_olvido_contrasena">Ingrese el correo al que se enviara el codigo</string>
+    <string name="enviar">Enviar</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="hint_correo">ecorecicla@correo.com</string>
+    <string name="ingrese_el_codigo">Ingrese el codigo</string>
+    <string name="hint_codigo_recuperacion">codigo de recuperacion</string>
 </resources>

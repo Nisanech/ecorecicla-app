@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:contentDescription="@string/descripcion_img_estadisticas"
+            android:src="@drawable/logo_eco_recicla" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="@string/enunciado_olvido_contrasena"
+            android:textAppearance="@style/text_enuncioado_olvido_contrasena"
+            android:gravity="top" />
+
+        <EditText
+            android:id="@+id/edit_text_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_olvido_contrasena"
+            android:hint="@string/hint_correo"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/botones_recuperar_contrasena">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/enviar"
+                android:textAppearance="@style/text_botones_olvido_contrasena" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="@string/ingrese_el_codigo"
+            android:textAppearance="@style/text_enuncioado_olvido_contrasena"
+            android:gravity="top" />
+
+        <EditText
+            android:id="@+id/edit_text_codigo_recuperacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/input_olvido_contrasena"
+            android:hint="@string/hint_codigo_recuperacion"
+            android:inputType="number"
+            android:importantForAutofill="no" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/botones_recuperar_contrasena">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/confirmar"
+                android:textAppearance="@style/text_botones_olvido_contrasena" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="374.42dp"
+        android:layout_height="365.05dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="506dp"
+        android:contentDescription="@string/descripcion_img_olvido_contrasena"
+        android:src="@drawable/img_olvido_contrasena" />
+
+</RelativeLayout>
