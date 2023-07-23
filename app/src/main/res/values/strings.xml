@@ -5,4 +5,8 @@
     <string name="ganancias_estadisticas">Total de ganancias</string>
     <string name="total_ganancias_estadisticas_tres">20.000 cop</string>
     <string name="menu_estadisticas_tres">Llevas reciclando</string>
+    <string name="historial">Historial</string>
+    <string name="porcentajes">Porcentajes</string>
+    <string name="ganancias">Ganancias</string>
+
 </resources>

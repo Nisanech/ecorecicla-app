@@ -135,7 +135,6 @@ obj/
 .idea/compiler.xml
 .idea/copyright/profiles_settings.xml
 .idea/encodings.xml
-.idea/misc.xml
 .idea/modules.xml
 .idea/scopes/scope_settings.xml
 .idea/dictionaries
@@ -147,7 +146,6 @@ obj/
 .idea/dynamic.xml
 .idea/uiDesigner.xml
 .idea/assetWizardSettings.xml
-.idea/gradle.xml
 .idea/jarRepositories.xml
 .idea/navEditor.xml
 
