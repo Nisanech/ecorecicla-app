@@ -15,6 +15,7 @@
         <activity
             android:name=".PantallaPrincipal"
             android:exported="false" />
+
         <activity
             android:name=".InicioSesion"
             android:exported="false" />
@@ -31,6 +32,16 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <activity
+            android:name=".RecuperarContrasena"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EstadisticasTres"
+            android:exported="false"
+            tools:ignore="MissingClass" />
     </application>
 
 </manifest>
