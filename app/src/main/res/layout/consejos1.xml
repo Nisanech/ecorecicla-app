@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".consejos1">
+
+    <TextView
+        android:id="@+id/consejos"
+        android:layout_width="287dp"
+        android:layout_height="66dp"
+        android:background="@drawable/Rectangle"
+        android:gravity="center"
+        android:text="Consejos"
+        android:textColor="#03A688"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <ImageView
+        android:id="@+id/ecology"
+        android:layout_width="154dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/Ecology" />
+
+    <TextView
+        android:id="@+id/sabes2"
+        android:layout_width="267dp"
+        android:layout_height="57dp"
+        android:text="@string/Te_damos_unos_tips"
+        android:textColor="#03A688"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <TextView
+        android:id="@+id/Tip1"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/Reserva_un_sitio_en_casa"
+        android:textColor="#474445"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+
+    <TextView
+        android:id="@+id/Tip2"
+        android:layout_width="176dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="@string/Lava_y_seca_los_envases"
+        android:textColor="#474445"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.843" />
+
+    <TextView
+        android:id="@+id/tip3"
+        android:layout_width="160dp"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:text="@string/Separa_bien_los_envases"
+        android:textColor="#474445"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <TextView
+        android:id="@+id/sabias"
+        android:layout_width="240dp"
+        android:layout_height="62dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/Sabias_que"
+        android:textColor="#03A688"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/numero1"
+        android:layout_width="95dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="@string/numero_1"
+        android:textColor="#03A688"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Tip1"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
+
+
+    <TextView
+        android:id="@+id/item1"
+        android:layout_width="169dp"
+        android:layout_height="110dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/Un_colombiano_produce_1.15kg"
+        android:textColor="#474445"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <TextView
+        android:id="@+id/numero2"
+        android:layout_width="186dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="@string/numero_2"
+        android:textColor="#03A688"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Tip1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Tip2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+
+
+    <TextView
+        android:id="@+id/item2"
+        android:layout_width="149dp"
+        android:layout_height="96dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/Lo_que_es_45mil_toneladas"
+        android:textColor="#474445"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <TextView
+        android:id="@+id/numero3"
+        android:layout_width="118dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/numero_3"
+        android:textColor="#03A688"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tip3"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="@+id/Tip2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <TextView
+        android:id="@+id/item3"
+        android:layout_width="176dp"
+        android:layout_height="87dp"
+        android:gravity="center"
+        android:text="@string/De_lo_cual_solo_el_3porciento"
+        android:textColor="#474445"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="58dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/item2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ilustracion" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="53dp"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toTopOf="@+id/item3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toEndOf="@+id/item2"
+        app:layout_constraintTop_toBottomOf="@+id/item1"
+        app:layout_constraintVertical_bias="0.475"
+        app:srcCompat="@drawable/Group" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="53dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/item3"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item2"
+        app:srcCompat="@drawable/Group2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="13dp"
+        android:layout_height="350dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/numero2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ecology"
+        app:srcCompat="@drawable/Rectangle2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

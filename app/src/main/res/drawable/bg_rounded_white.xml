@@ -1,0 +1,28 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Capa inferior (Fondo blanco) -->
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- Capa intermedia (Gradiente de colores) -->
+    <item android:top="8dp" android:bottom="8dp" android:left="8dp" android:right="8dp">
+        <shape>
+            <gradient
+                android:angle="135"
+                android:startColor="#7FE5D5"
+                android:endColor="#7EF1B3" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- Capa superior (Otro fondo blanco) -->
+    <item android:top="16dp" android:bottom="16dp" android:left="16dp" android:right="16dp">
+        <shape>
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</layer-list>

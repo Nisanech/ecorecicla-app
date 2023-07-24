@@ -20,4 +20,45 @@
     <string name="hint_correo">ecorecicla@correo.com</string>
     <string name="ingrese_el_codigo">Ingrese el codigo</string>
     <string name="hint_codigo_recuperacion">codigo de recuperacion</string>
+    <!-- Strings para "¿Sabías qué?" -->
+    <string name="Sabias_que">¿Sabías qué?</string>
+    <string name="Un_colombiano_produce_1.15kg">Un colombiano produce alrededor de 1.15kg de basura al día</string>
+    <string name="Lo_que_es_45mil_toneladas">Lo que es 45 mil toneladas en todo el país</string>
+    <string name="De_lo_cual_solo_el_3porciento">De lo cual solo el 3% se recicla</string>
+
+    <!-- Strings para los identificadores de numeros -->
+    <string name="numero_1">01</string>
+    <string name="numero_2">02</string>
+    <string name="numero_3">03</string>
+
+    <!-- Strings para los consejos -->
+    <string name="consejos">Consejos</string>
+    <string name="Te_damos_unos_tips">Te damos unos tips</string>
+    <string name="Reserva_un_sitio_en_casa">Reserva un sitio en casa para el reciclaje</string>
+    <string name="Lava_y_seca_los_envases">Lava y seca los envases que vas a reciclar</string>
+    <string name="Separa_bien_los_envases">Separa bien los envases y aplánalos</string>
+
+    <!-- Strings para la vista de la primera estadistica -->
+
+    <string name="rango_consulta">Rango de consulta</string>
+    <string name="este_mes_ayudaste">Este mes ayudaste al planeta con:</string>
+    <string name="dd_mm_aaa">DD/MM/AAA</string>
+    <string name="hasta">Hasta:</string>
+    <string name="desde">Desde:</string>
+    <string name="kg_5">5 KG</string>
+    <string name="fecha_consulta">05 / 07 /2023</string>
+    <string name="historial_recoleccion">Historial de recolección</string>
+    <string name="llevas_reciclando">Llevas reciclando</string>
+    <string name="estadisticas">Estadisticas</string>
+    <string name="cargar_mas">Cargar más</string>
+
+    <!-- Strings para despliegue de tipo de material -->
+    <string-array name="recycling_types">
+        <item>Dispositivos Electrónicos</item>
+        <item>Plásticos</item>
+        <item>Metal</item>
+        <item>Papel</item>
+        <item>Cartón</item>
+        <item>Vidrio</item>
+    </string-array>
 </resources>

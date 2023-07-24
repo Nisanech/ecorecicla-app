@@ -42,6 +42,22 @@
             android:name=".EstadisticasTres"
             android:exported="false"
             tools:ignore="MissingClass" />
+
+        <activity
+          android:name=".button_border"
+          android:exported="false" />
+        <activity
+          android:name=".estadistica1"
+          android:exported="false" />
+        <activity
+          android:name=".consejos1"
+          android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
