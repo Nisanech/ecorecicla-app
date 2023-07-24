@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A688"
+    android:backgroundTint="#4D03A688"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/textCategorias"
+        android:layout_width="415dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:text="Estadisticas"
+        android:background="@color/white"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        android:textColor="#03A688"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingStart="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="407dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:text="Progreso de reciclaje"
+        android:textAlignment="center"
+        android:textColor="#474445"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCategorias" />
+
+    <Button
+        android:id="@+id/btn_procentaje"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#03A688"
+        android:drawableTop="@drawable/porcentajes"
+        android:text="Porcentaje"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_historia"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_historia"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#03A688"
+        android:drawableTop="@drawable/historial"
+        android:text="Historial"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_ganancia"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#03A688"
+        android:drawableTop="@drawable/ganancias"
+        android:text="Ganancia"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_procentaje"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="372dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_procentaje"
+        app:layout_constraintVertical_bias="0.542">
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="301dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <!-- Primera progeso -->
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!-- Graficas de progreso -->
+                <!-- Dispositivos electrónicos-->
+                <ProgressBar
+                    android:id="@+id/progressBarElectronicos"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="270dp"
+                    android:layout_height="94dp"
+                    android:progressTint="#FF4081"
+                    android:max="100"/>
+
+                <TextView
+                    android:id="@+id/txtDispositivos"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:text="Dispositivos electrónicos"
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDispositivosInfo"
+                    android:layout_width="265dp"
+                    android:layout_height="46dp"
+                    android:text="Llevas un cumplimento de 65% de tu meta."
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="20sp" />
+
+                <!-- Metal-->
+                <ProgressBar
+                    android:id="@+id/progressBarMetal"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="270dp"
+                    android:layout_height="94dp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/txtMetal"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:text="Metal"
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtMetalInfo"
+                    android:layout_width="265dp"
+                    android:layout_height="46dp"
+                    android:text="Llevas un cumplimento de 45% de tu meta."
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="20sp" />
+
+                <!-- Papel y carton-->
+                <ProgressBar
+                    android:id="@+id/progressBarPapel"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="270dp"
+                    android:layout_height="94dp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/txtPapel"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:text="Papel y cartón"
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPapelInfo"
+                    android:layout_width="265dp"
+                    android:layout_height="46dp"
+                    android:text="Llevas un cumplimento de 15% de tu meta."
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="20sp" />
+
+                <!-- Vidrio-->
+                <ProgressBar
+                    android:id="@+id/progressBarVidrio"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="270dp"
+                    android:layout_height="94dp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/txtVidrio"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:text="Vidrio"
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtVidrioInfo"
+                    android:layout_width="265dp"
+                    android:layout_height="48dp"
+                    android:text="Llevas un cumplimento de 5% de tu meta."
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="20sp" />
+
+                <!-- Plástico -->
+                <ProgressBar
+                    android:id="@+id/progressBarPlastico"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="270dp"
+                    android:layout_height="94dp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/txtPlastico"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp"
+                    android:text="Plástico"
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPlasticoInfo"
+                    android:layout_width="265dp"
+                    android:layout_height="48dp"
+                    android:text="Llevas un cumplimento de 5% de tu meta."
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/estadistica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="@+id/textCategorias"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,118 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#03A688"
+    android:backgroundTint="#4D03A688"
     tools:context=".Categorias">
+
+    <Button
+        android:id="@+id/btn_dispositivosElectronicos"
+        android:layout_width="363dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/dispo_electronicos"
+        android:text="Dispositivos electrónicos"
+        android:textAlignment="center"
+        android:textColor="#677D89"
+        android:textSize="24sp"
+        app:iconPadding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCategorias"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_metal"
+        android:layout_width="363dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/metal"
+        android:text="Metal"
+        android:textAlignment="center"
+        android:textColor="#677D89"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dispositivosElectronicos" />
+
+    <Button
+        android:id="@+id/btn_vidrio"
+        android:layout_width="363dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/papel"
+        android:text="Vidrio"
+        android:paddingEnd="20dp"
+        android:textAlignment="center"
+        android:textColor="#677D89"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_metal" />
+
+    <Button
+        android:id="@+id/btn_plastico"
+        android:layout_width="363dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/vidrio"
+        android:text="Plástico"
+        android:textAlignment="center"
+        android:textColor="#677D89"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_papelCarton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_papelCarton"
+        android:layout_width="363dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:drawableRight="@drawable/plastico"
+        android:text="Papel y cartón"
+        android:textAlignment="center"
+        android:textColor="#677D89"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_vidrio" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="195dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="1dp"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eco_bag" />
+
+    <TextView
+        android:id="@+id/textCategorias"
+        android:layout_width="417dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="35dp"
+        android:text="Categorías"
+        android:textAlignment="inherit"
+        android:textColor="#03A688"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
