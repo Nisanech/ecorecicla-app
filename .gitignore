@@ -38,3 +38,6 @@ local.properties
 
 # End of https://www.toptal.com/developers/gitignore/api/android,androidstudio,java
 # End of https://www.toptal.com/developers/gitignore/api/android,androidstudio,java
+.idea/vcs.xml
+hermes
+hermes.pub
