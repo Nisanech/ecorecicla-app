@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonStyleLessRounded" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">#03A688</item>
+        <item name="android:drawableTop">@drawable/historial</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:radius">90dp</item> <!-- Ajusta el radio de las esquinas aquí -->
+    </style>
+</resources>
