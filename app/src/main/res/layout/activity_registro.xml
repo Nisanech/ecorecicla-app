@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#00FFFFFF">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="-75dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="500dp"
+      android:orientation="vertical">
+
+      <!-- Logo -->
+      <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/logo" />
+
+      <!-- Correo -->
+      <TextView
+        android:id="@+id/labelCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:text="Correo"
+        android:textColor="#03A688"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+      <EditText
+        android:id="@+id/inputCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_rounded_background"
+        android:ems="10"
+        android:hint="Ingresa tu correo"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHint="#858585"
+        android:textSize="16sp" />
+
+      <!-- Nombres -->
+      <TextView
+        android:id="@+id/labelNombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="Nombres"
+        android:textColor="#03A688"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+      <EditText
+        android:id="@+id/inputNombres"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_rounded_background"
+        android:ems="10"
+        android:hint="Ingresa tu nombre"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#858585"
+        android:textSize="16sp" />
+
+      <!-- Telefono -->
+      <TextView
+        android:id="@+id/labelTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="Teléfono"
+        android:textColor="#03A688"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+      <EditText
+        android:id="@+id/inputTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_rounded_background"
+        android:ems="10"
+        android:hint="+57 123 4567"
+        android:inputType="text|phone"
+        android:padding="10dp"
+        android:textColorHint="#858585"
+        android:textSize="16sp" />
+
+      <!-- Ubicacion -->
+      <TextView
+        android:id="@+id/labelUbicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:text="Ubicación"
+        android:textColor="#03A688"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+      <!-- Linea -->
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:background="#D9D9D9" />
+
+      <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <!-- Municipio -->
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+              android:id="@+id/labelMunicipio"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="32dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginEnd="2dp"
+              android:text="Municipio"
+              android:textColor="#03A688"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+            <Spinner
+              android:id="@+id/spinnerMunicipio"
+              android:layout_width="153dp"
+              android:layout_height="50dp"
+              android:layout_marginStart="32dp"
+              android:layout_marginTop="15dp"
+              android:layout_marginEnd="32dp"
+              android:background="@drawable/input_rounded_background"
+              android:padding="10dp"
+              android:spinnerMode="dropdown"
+              android:textColorHint="#858585"
+              android:textSize="16sp" />
+          </LinearLayout>
+
+          <!-- Departamento -->
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+              android:id="@+id/labelDepartamento"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="12dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginEnd="32dp"
+              android:text="Departamento"
+              android:textColor="#03A688"
+              android:textSize="18sp"
+              android:textStyle="bold" />
+
+            <Spinner
+              android:id="@+id/inputDepartamento"
+              android:layout_width="153dp"
+              android:layout_height="50dp"
+              android:layout_marginStart="12dp"
+              android:layout_marginTop="15dp"
+              android:layout_marginEnd="32dp"
+              android:background="@drawable/input_rounded_background"
+              android:padding="10dp"
+              android:spinnerMode="dropdown"
+              android:textColorHint="#858585"
+              android:textSize="16sp" />
+          </LinearLayout>
+        </TableRow>
+      </TableLayout>
+
+      <!-- Localidad -->
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/labelLocalidad"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="2dp"
+          android:text="Localidad o Sector"
+          android:textColor="#03A688"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+
+        <Spinner
+          android:id="@+id/spinnerLocalidad"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginEnd="32dp"
+          android:background="@drawable/input_rounded_background"
+          android:padding="10dp"
+          android:spinnerMode="dropdown"
+          android:textColorHint="#858585"
+          android:textSize="16sp" />
+      </LinearLayout>
+
+      <!-- Linea -->
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="#D9D9D9" />
+
+      <!-- Password -->
+      <TextView
+        android:id="@+id/labelPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="Contraseña"
+        android:textColor="#03A688"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+      <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_rounded_background"
+        android:ems="10"
+        android:hint="****"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="#858585"
+        android:textSize="16sp" />
+
+      <!-- Confirm Password -->
+      <TextView
+        android:id="@+id/labelConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:text="Confirmar Contraseña"
+        android:textColor="#03A688"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+      <EditText
+        android:id="@+id/inputConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_rounded_background"
+        android:ems="10"
+        android:hint="Ingresa tu nombre"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="#858585"
+        android:textSize="16sp" />
+
+      <!-- Terminos y Condiciones -->
+      <CheckBox
+        android:id="@+id/terminosCondiciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:text="Acepta terminos y condiciones"
+        android:textColor="#7D7D7D" />
+
+      <!-- Tratamiento de Datos -->
+      <CheckBox
+        android:id="@+id/tratamientoDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:text="Acepta terminos y condiciones"
+        android:textColor="#7D7D7D" />
+
+      <!-- Boton Registro -->
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:background="@drawable/btn_registro_background">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="Registrarse"
+          android:textColor="#189E98"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+      </LinearLayout>
+
+    </LinearLayout>
+  </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
