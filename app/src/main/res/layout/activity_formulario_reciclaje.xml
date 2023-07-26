@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/form_background">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" >
+
+      <!-- Logo -->
+      <ImageView
+        android:id="@+id/logoForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/logoFormularioReciclaje" />
+
+      <!-- Tiempo de Recoleccion -->
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/cards_background"
+        >
+
+        <TextView
+          android:id="@+id/labelTiempo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:text="Tiempo de Recolección"
+          android:textColor="#03A688"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+
+        <TableLayout
+          android:layout_width="match_parent"
+          android:layout_height="100dp">
+
+          <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Desde -->
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <TextView
+                android:id="@+id/fechaInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Desde:"
+                android:textColor="#A6A5A5"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+              <EditText
+                android:id="@+id/inputFechaInicio"
+                android:layout_width="153dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_rounded_background"
+                android:ems="10"
+                android:hint="DD/MM/AA"
+                android:inputType="date"
+                android:padding="10dp"
+                android:textColorHint="#858585"
+                android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <!-- Hasta -->
+              <TextView
+                android:id="@+id/fechaFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Hasta:"
+                android:textColor="#A6A5A5"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+              <EditText
+                android:id="@+id/inputFechaFinal"
+                android:layout_width="153dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_rounded_background"
+                android:ems="10"
+                android:hint="DD/MM/AA"
+                android:inputType="date"
+                android:padding="10dp"
+                android:textColorHint="#858585"
+                android:textSize="16sp" />
+            </LinearLayout>
+          </TableRow>
+        </TableLayout>
+
+        <!-- Meta de Recoleccion -->
+        <TextView
+          android:id="@+id/labelMeta"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:text="Meta de Recolección"
+          android:textColor="#03A688"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+
+        <EditText
+          android:id="@+id/inputMeta"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="10dp"
+          android:background="@drawable/input_rounded_background"
+          android:ems="10"
+          android:hint="100 Kg"
+          android:inputType="date"
+          android:padding="10dp"
+          android:textColorHint="#858585"
+          android:textSize="16sp" />
+
+        <TextView
+          android:id="@+id/textNota"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginTop="7dp"
+          android:text="El valor se ingresará en Kilogramos (Kg)"
+          android:textColor="#7C7A7B"
+          android:textSize="14sp"
+           />
+
+        <!-- Boton agregar meta -->
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="20dp"
+          android:gravity="center"
+          android:background="@drawable/botones_recuperar_contrasena">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Agregar Meta"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+      </LinearLayout>
+
+      <!-- Formulario de reciclaje -->
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="720dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/cards_background"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:paddingBottom="10dp">
+
+        <!-- Tiempo de Recoleccion -->
+        <TextView
+          android:id="@+id/titulo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="100dp"
+          android:layout_marginEnd="100dp"
+          android:text="Nuevo Registro"
+          android:textAlignment="center"
+          android:textColor="#03A688"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+        <TextView
+          android:id="@+id/labelCategoria"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginTop="20dp"
+          android:text="Categoría"
+          android:textColor="#03A688"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+
+        <TableLayout
+          android:layout_width="match_parent"
+          android:layout_height="60dp">
+
+          <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Categoria -->
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+              <EditText
+                android:id="@+id/inputCategoria"
+                android:layout_width="265dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_rounded_background"
+                android:ems="10"
+                android:hint="Vidrio"
+                android:inputType="date"
+                android:padding="10dp"
+                android:textColorHint="#858585"
+                android:textSize="16sp" />
+
+              <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/cambiar_categoria" />
+            </LinearLayout>
+          </TableRow>
+        </TableLayout>
+
+        <!-- Cantidad Recolectada -->
+        <TextView
+          android:id="@+id/labelCantidad"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:text="Cantidad Recolectada"
+          android:textColor="#03A688"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+
+        <EditText
+          android:id="@+id/inputCantidad"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginEnd="10dp"
+          android:background="@drawable/input_rounded_background"
+          android:ems="10"
+          android:hint="20 Kg"
+          android:inputType="date"
+          android:padding="10dp"
+          android:textColorHint="#858585"
+          android:textSize="16sp" />
+
+        <TextView
+          android:id="@+id/textNota2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="7dp"
+          android:layout_marginEnd="10dp"
+          android:text="El valor se ingresará en Kilogramos (Kg)"
+          android:textColor="#7C7A7B"
+          android:textSize="14sp" />
+
+        <!-- Ubicacion -->
+        <TextView
+          android:id="@+id/labelUbicacion"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginEnd="10dp"
+          android:text="Lugar de disposición"
+          android:textColor="#03A688"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+
+        <!-- Linea -->
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginEnd="10dp"
+          android:background="#D9D9D9" />
+
+        <TableLayout
+          android:layout_width="match_parent"
+          android:layout_height="119dp">
+
+          <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="156dp">
+
+            <!-- Departamento -->
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <TextView
+                android:id="@+id/labelDepartamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="Departamento"
+                android:textColor="#03A688"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+              <Spinner
+                android:id="@+id/inputDepartamento"
+                android:layout_width="153dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_rounded_background"
+                android:padding="10dp"
+                android:spinnerMode="dropdown"
+                android:textColorHint="#858585"
+                android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Municipio -->
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+              <TextView
+                android:id="@+id/labelMunicipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Municipio"
+                android:textColor="#03A688"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+              <Spinner
+                android:id="@+id/spinnerMunicipio"
+                android:layout_width="153dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/input_rounded_background"
+                android:padding="10dp"
+                android:spinnerMode="dropdown"
+                android:textColorHint="#858585"
+                android:textSize="16sp" />
+            </LinearLayout>
+          </TableRow>
+        </TableLayout>
+
+        <!-- Localidad -->
+        <TextView
+          android:id="@+id/labelCentroAcopio"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp"
+          android:text="Lugar de disposición"
+          android:textColor="#03A688"
+          android:textSize="18sp"
+          android:textStyle="bold" />
+
+        <Spinner
+          android:id="@+id/spinnerCentroAcopio"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginEnd="10dp"
+          android:background="@drawable/input_rounded_background"
+          android:padding="10dp"
+          android:spinnerMode="dropdown"
+          android:textColorHint="#858585"
+          android:textSize="16sp" />
+
+        <!-- Boton Registro -->
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="20dp"
+          android:gravity="center"
+          android:background="@drawable/btn_registro_background">
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ingresar registro"
+            android:textColor="#189E98"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Linea -->
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginEnd="10dp"
+          android:background="#D9D9D9" />
+
+        <!-- Valor por Kilogramo -->
+        <TableLayout
+          android:layout_width="match_parent"
+          android:layout_height="100dp">
+
+          <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:orientation="horizontal">
+
+              <TextView
+                android:id="@+id/labelValorKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="Valor por Kilogramo"
+                android:textColor="#474445"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+              <TextView
+                android:id="@+id/outputValorKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="0 COP"
+                android:textColor="#7C7A7B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            </LinearLayout>
+          </TableRow>
+
+          <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:orientation="horizontal">
+
+              <TextView
+                android:id="@+id/labelValorTKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="100dp"
+                android:text="Valor Total"
+                android:textColor="#474445"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+              <TextView
+                android:id="@+id/outputValorTKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="0 COP"
+                android:textColor="#7C7A7B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            </LinearLayout>
+          </TableRow>
+
+        </TableLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
