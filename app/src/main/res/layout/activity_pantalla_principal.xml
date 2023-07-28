@@ -21,21 +21,21 @@
         app:layout_constraintVertical_bias="0.138"
         app:srcCompat="@drawable/group_229" />
 
- <Button
-     android:id="@+id/btnCategorias"
-     android:layout_width="324dp"
-     android:layout_height="140dp"
-     android:background="@drawable/btn_home"
-     android:backgroundTint="@color/white"
-     android:fontFamily="@font/roboto_bold"
-     android:text="Categorías       "
-     android:textColor="#03A688"
-     android:textSize="28sp"
-     app:layout_constraintBottom_toBottomOf="parent"
-     app:layout_constraintEnd_toEndOf="parent"
-     app:layout_constraintStart_toStartOf="parent"
-     app:layout_constraintTop_toTopOf="parent"
-     app:layout_constraintVertical_bias="0.341" />
+    <Button
+        android:id="@+id/btnCategorias"
+        android:layout_width="324dp"
+        android:layout_height="140dp"
+        android:background="@drawable/btn_home"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Categorías       "
+        android:textColor="#03A688"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
 
     <ImageView
         android:id="@+id/imageView4"

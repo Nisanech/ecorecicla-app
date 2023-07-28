@@ -23,7 +23,7 @@ public class consejos1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.consejos1);
+        setContentView(R.layout.activity_consejos1);
 
         // TextViews
         textViewConsejos = findViewById(R.id.consejos);

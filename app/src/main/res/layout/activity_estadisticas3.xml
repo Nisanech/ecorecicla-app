@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A688"
+    android:backgroundTint="#4D03A688"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/textCategorias"
+        android:layout_width="415dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:text="Estadisticas"
+        android:background="@color/white"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        android:textColor="#03A688"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingStart="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/estadistica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="@+id/textCategorias"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:text="Progreso de reciclaje"
+        android:textAlignment="center"
+        android:textColor="#474445"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCategorias" />
+
+    <Button
+        android:id="@+id/btn_porcentaje"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#03A688"
+        android:drawableTop="@drawable/porcentajes"
+        android:text="Porcentaje"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_historia"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_historia"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#03A688"
+        android:drawableTop="@drawable/historial"
+        android:text="Historial"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_ganancia"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#03A688"
+        android:drawableTop="@drawable/ganancias"
+        android:text="Ganancia"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_porcentaje"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RelativeLayout
+        android:layout_width="366dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="92dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/btn_porcentaje"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="23dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="255dp"
+            android:layout_marginTop="39dp"
+            android:contentDescription="@string/descripcion_img_total_ganancias"
+            android:src="@drawable/money_wallet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:text="@string/ganancias_estadisticas"
+            android:textAppearance="@style/ganancias_estadisticas"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="74dp"
+            android:background="@drawable/total_estadisticas_tres"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="26dp"
+            android:gravity="center_vertical"
+            android:text="@string/el_planeta"
+            android:textAppearance="@style/el_planeta" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

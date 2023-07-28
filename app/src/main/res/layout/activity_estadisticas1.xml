@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/fondo"
+  tools:context=".estadistica1">
+
+    <!-- Agregamos el Spinner -->
+    <TextView
+        android:id="@+id/textCategorias"
+        android:layout_width="415dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:text="Estadisticas"
+        android:background="@color/white"
+        android:textAlignment="gravity"
+        android:textAllCaps="false"
+        android:textColor="#03A688"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingStart="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/estadistica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="@+id/textCategorias"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:text="Llevas reciclando"
+        android:textAlignment="center"
+        android:textColor="#474445"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCategorias" />
+
+
+    <Button
+        android:id="@+id/btn_porcentaje"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#03A688"
+        android:drawableTop="@drawable/porcentajes"
+        android:text="Porcentaje"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_historia"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_ganancia"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#03A688"
+        android:drawableTop="@drawable/ganancias"
+        android:text="Ganancia"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_porcentaje"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_historia"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#03A688"
+        android:drawableTop="@drawable/historial"
+        android:text="Historial"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="379dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="44dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/btn_porcentaje"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp">
+
+        <!-- Fecha inicial -->
+
+        <!-- Fecha final -->
+
+        <!-- Spinner para seleccionar el tipo de reciclaje -->
+
+        <!-- Texto informativo -->
+
+        <TextView
+            android:id="@+id/fechaconsul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="109dp"
+            android:layout_marginEnd="239dp"
+            android:text="DD/MM/AAAA"
+            android:textColor="#797979"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/hasta"
+            app:layout_constraintTop_toTopOf="@+id/fecha" />
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="109dp"
+            android:layout_marginEnd="52dp"
+            android:text="DD/MM/AAAA"
+            android:textColor="#797979"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/desde"
+            app:layout_constraintTop_toBottomOf="@+id/desde" />
+
+        <TextView
+            android:id="@+id/hasta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="130dp"
+            android:text="Hasta:"
+            android:textColor="#A6A5A5"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/fecha"
+            app:layout_constraintTop_toTopOf="@+id/desde" />
+
+        <TextView
+            android:id="@+id/consulta4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="243dp"
+            android:layout_marginBottom="185dp"
+            android:text="Rango de consulta"
+            android:textColor="#03A688"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/fecha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/consulta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="95dp"
+            android:text="Historial de recolección"
+            android:textColor="#03A688"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/fecha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/desde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="319dp"
+            android:text="Desde:"
+            android:textColor="#A6A5A5"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/consulta4" />
+
+        <TextView
+            android:id="@+id/consulta"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="207dp"
+            android:layout_marginBottom="26dp"
+            android:text="Este mes ayudaste al planeta con:"
+            android:textColor="#03A688"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/recyclingTypeSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/fecha" />
+
+        <TextView
+            android:id="@+id/consulta2"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="207dp"
+            android:layout_marginBottom="86dp"
+            android:text="Este mes ayudaste al planeta con:"
+            android:textColor="#03A688"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/recyclingTypeSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/fecha" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/cargar"
+        android:layout_width="226dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#03A688"
+        android:text="Cargar más"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

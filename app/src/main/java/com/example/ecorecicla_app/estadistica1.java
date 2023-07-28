@@ -14,7 +14,7 @@ public class estadistica1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.consejos1);
+        setContentView(R.layout.activity_consejos1);
 
         // TextView que queremos subrayar
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView desdeTextView = findViewById(R.id.desde);

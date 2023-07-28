@@ -12,7 +12,7 @@ public class EstadisticasTres extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_estadisticas_tres);
+        setContentView(R.layout.activity_estadisticas3);
     }
 
     public void onHistorialClick(View view) {

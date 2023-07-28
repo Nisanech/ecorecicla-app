@@ -26,9 +26,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/estadistica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="@+id/textCategorias"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="407dp"
+        android:layout_width="wrap_content"
         android:layout_height="49dp"
         android:layout_marginTop="40dp"
         android:text="Progreso de reciclaje"
@@ -37,12 +48,11 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textCategorias" />
 
     <Button
-        android:id="@+id/btn_procentaje"
+        android:id="@+id/btn_porcentaje"
         android:layout_width="112dp"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
@@ -86,7 +96,7 @@
         app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btn_procentaje"
+        app:layout_constraintStart_toEndOf="@+id/btn_porcentaje"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
@@ -97,7 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_procentaje"
+        app:layout_constraintTop_toBottomOf="@+id/btn_porcentaje"
         app:layout_constraintVertical_bias="0.542">
 
         <LinearLayout
@@ -116,6 +126,7 @@
                 android:padding="10dp">
 
                 <!-- Graficas de progreso -->
+
                 <!-- Dispositivos electrónicos-->
                 <ProgressBar
                     android:id="@+id/progressBarElectronicos"
@@ -255,14 +266,4 @@
         </LinearLayout>
     </ScrollView>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/estadistica"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.949"
-        app:layout_constraintStart_toStartOf="@+id/textCategorias"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
